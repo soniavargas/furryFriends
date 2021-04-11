@@ -15,3 +15,56 @@ header h1, h2 {
     background-color: #24c5ee;
 }
 
+.book-border {
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.full-screen {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.site-footer {
+  background-image: linear-gradient(#65d6ce, white);
+  padding: 20px 0;
+}
+  /* My borders showing different div */
+.col, div[class^="col-"], label[class^="col-"] {
+  border: 1px solid red;
+  margin: 2px; 
+  
+} 
+
+.row {
+  border: 3px solid blue;
+  padding: 2px;
+  margin: 5px;
+}
+
+.container, .container-fluid {
+  border: 3px solid green;
+  padding: 2px;
+  margin: 5px;    
+}
+
+.media {
+  border: 3px solid yellow;
+  padding: 2px;
+  margin: 5px;       
+}  
+
+.card {
+  border: 3px solid purple;
+  padding: 2px;
+  margin: 5px;    
+}
+
+.orange-border {
+
+  border: 1px solid green;
+
+} 
+
