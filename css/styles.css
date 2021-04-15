@@ -7,18 +7,58 @@ header h1, h2 {
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
+    padding: 60px;
     background-color: #65d6ce;
 }
 
 .navbar {
-    background-color: #24c5ee;
+    background-color: #57aaee;
 }
 
 .book-border {
     font-size: 19px;
     font-weight: bold;
     border-radius: 50px;
+}
+
+.btn-facebook {
+  color: #3B5998;
+}
+
+.btn-instagram {
+  color: #3F729B;
+}
+
+.btn-twitter {
+  color: #55ACEE;
+}
+
+.btn-google {
+  color: #DD4B39;
+}
+
+/* .image-thumbnail {
+  height: 30px;
+} */
+
+.navbar .btn-facebook {
+  color: white;
+}
+
+.navbar .btn-instagram {
+  color: white;
+}
+
+.navbar .btn-twitter {
+  color: white;
+}
+
+.navbar .btn-google {
+  color: white;
+}
+
+.footer-block {
+  padding: 7%;
 }
 
 .full-screen {
@@ -31,8 +71,85 @@ header h1, h2 {
   background-image: linear-gradient(#65d6ce, white);
   padding: 20px 0;
 }
+
+.text-color {
+  color: white;
+}
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* card part*/
+
+.flipcard {
+  perspective: 1000px;
+  margin-bottom: 1.5rem;
+}
+.flipcard .flipcard-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flipcard .card-front, 
+.flipcard .card-back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backface-visibility: hidden;
+  transition: all .3s;
+}
+.flipcard .card-front {
+  z-index: 2;
+}
+.flipcard .card-front::after {
+  content: "";
+  display: block;
+  width: 0;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  border-width: 16px 16px 0 0;
+  border-style: solid;
+  border-color: #999 #fff;
+  border-radius: .25rem 0 0 0;
+}
+.flipcard .card-back {
+  position: absolute;
+  top: 0;
+  text-align: left;
+  z-index: 1;
+  transform: rotateY(180deg);
+  overflow-y: auto;
+}
+/* the flippy magic */ 
+.flipcard:hover .flipcard-wrap {
+  transform: rotateY(-180deg);
+}
+
+
   /* My borders showing different div */
-.col, div[class^="col-"], label[class^="col-"] {
+/* .col, div[class^="col-"], label[class^="col-"] {
   border: 1px solid red;
   margin: 2px; 
   
@@ -66,5 +183,5 @@ header h1, h2 {
 
   border: 1px solid green;
 
-} 
+}  */
 
