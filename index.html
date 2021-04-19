@@ -39,7 +39,7 @@
 
                 <!--Book Button-->
                 <div class="col-md-3 mt-4 text-right">
-                    <a class="btn btn-warning btn-lg book-border" role="button" data-toggle="modal" data-target="#" > Book Now</a>
+                    <a class="btn btn-warning btn-lg book-border" role="button" id="bookButton" > Book Now</a>
                     <br />
                     <a role="button" class="btn btn-link" href="tel:+14075551425"><i class="fa fa-phone"></i> 1-407-555-1425</a>
                     <br />
@@ -51,8 +51,49 @@
         </div>
     </header>
 
+<!--Booking Modal-->
+    <div id="bookModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title"> Book a Grooming Session </h3>
+                  <button type="button" class="close" data-dismiss="modal"> &times; </button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form action="" id="reserveForm">
+                          <div class="form-group row">
+                              <label class="col-sm-6 col-form-label" for="numPets">Number of Pets</label>
+                              <div class="col">
+                                      <select class="form-control" name="numPets" id="">  
+                                          <option value="">Select...</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                          <option value="3">3</option>
+                                       </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label class="col-sm-6 col-form-label" for="date">Date</label>
+                              <div class="col ">
+                                  <input class="form-control" type="date" id="date" name="date" placeholder="">
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <div class="col">
+                                  <button data-dismiss="modal" class="btn btn-secondary" >Cancel</button>
+                                  <button class="btn btn-primary" type="submit">Book</button>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
 <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
 
             <a class="navbar-brand"  href="#"><img src="img/furry-friends-noletters.png" height="60" width="60" alt="Furry Friends Logo"></a>
@@ -66,10 +107,10 @@
                         <a class="nav-link" href="#"><i class="fa fa-paw fa-lg"></i> Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About Us</a>
+                        <a class="nav-link" href="aboutus.html" ><i class="fa fa-info fa-lg"></i> About Us</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="services.html"><i class="fa fa-shopping-cart fa-lg"></i> Services</a>
+                        <a class="nav-link" href="#services" ><i class="fa fa-shopping-cart fa-lg"></i> Services</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="contactus.html"><i class="fa fa-id-card fa-lg"></i> Contact Us</a>
@@ -184,8 +225,8 @@
 </div>
 
 
-<div class="container my-5">
-    <div class="row">
+<div class="container my-5" id="services">
+     <div class="row">
         <div class="col-md-4">
             <div class="flipcard">
                 <div class="flipcard-wrap">
@@ -212,8 +253,7 @@
                 <div class="flipcard-wrap">
                    <div class="card card-front">
 
-                        <img src="img/charles-deluvio-Mv9hjnEUHR4-unsplash.jpg" alt="" class="card-img-top" 
-                        style="filter: invert(75%);">
+                        <img src="img/kanashi-BLW_KQ0Rkn0-unsplash.jpg" alt="" class="card-img-top" >
                         <div class="card-body">
                             <h5>Cat care</h5>
                             <p>Taking care of all your cat's needs</p>
@@ -234,8 +274,7 @@
             <div class="flipcard">
                 <div class="flipcard-wrap">
                     <div class="card card-front">
-                        <img src="img/charles-deluvio-Mv9hjnEUHR4-unsplash.jpg" alt="" class="card-img-top" 
-                        style="filter: grayscale(100%);">
+                        <img src="img/lawrence-makoona-AXCfMfhYch4-unsplash.jpg" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5>Pet Taxi</h5>
                             <p>Taking care of all your pet's needs</p>
@@ -295,6 +334,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 
 </body>

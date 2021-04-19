@@ -109,6 +109,10 @@ color: #DD4B39;
 }
 /* card part ends */
 
+#bookModal .modal-header {
+  background-color: #57aaee;
+  color: white; }
+
 /* My borders showing different div 
 .col, div[class^="col-"], label[class^="col-"] {
   border: 1px solid red;
