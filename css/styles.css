@@ -13,6 +13,7 @@ header h1, h2 {
 
 .navbar {
   background-color: #57aaee;
+  height: 60px ;
 }
 
 .book-border {
@@ -37,12 +38,34 @@ color: #55ACEE;
 color: #DD4B39;
 }
 
+
+.btn-submit{
+  background-color: #65d6ce;
+}
+
+.carousel-caption {
+ /* Use the code from = https://www.geeksforgeeks.org/css-font-border/#:~:text=Method%201%3A%20Using%20text%2Dshadow,or%20shadow%20to%20the%20text. */
+  text-shadow: -1px 1px 0 #000,
+                          1px 1px 0 #000,
+                         1px -1px 0 #000,
+                        -1px -1px 0 #000;
+}
+
+.contact-section {
+  padding: 100px 0;
+}
+
 .feature-title {
   font-size: 1.5rem;
 }
 
 .feature-box {
   padding: 4.5%;
+}
+
+.fun-section {
+  padding:  4.5% 0;
+  background-color: rgb(225, 246, 252);
 }
 
 .icon {
@@ -113,8 +136,13 @@ color: #DD4B39;
   background-color: #57aaee;
   color: white; }
 
-/* My borders showing different div 
-.col, div[class^="col-"], label[class^="col-"] {
+
+.title-section {
+  padding: 20px 0;
+}
+
+/* My borders showing different div */
+/* .col, div[class^="col-"], label[class^="col-"] {
   border: 1px solid red;
   margin: 2px; 
   
@@ -148,4 +176,4 @@ color: #DD4B39;
 
   border: 1px solid green;
 
-}  */
+}   */

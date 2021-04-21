@@ -50,6 +50,7 @@
             </div>
         </div>
     </header>
+<!--End of Jumbotron-->
 
 <!--Booking Modal-->
     <div id="bookModal" class="modal fade" role="dialog">
@@ -91,9 +92,10 @@
           </div>
       </div>
     </div>
+<!--End of Booking Modal-->
 
 <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container">
 
             <a class="navbar-brand"  href="#"><img src="img/furry-friends-noletters.png" height="60" width="60" alt="Furry Friends Logo"></a>
@@ -107,23 +109,21 @@
                         <a class="nav-link" href="#"><i class="fa fa-paw fa-lg"></i> Home</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="aboutus.html" ><i class="fa fa-info fa-lg"></i> About Us</a>
+                        <a class="nav-link" href="#aboutus" ><i class="fa fa-info fa-lg"></i> About Us</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#services" ><i class="fa fa-shopping-cart fa-lg"></i> Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="contactus.html"><i class="fa fa-id-card fa-lg"></i> Contact Us</a>
+                        <a class="nav-link" href="#contactus"><i class="fa fa-id-card fa-lg"></i> Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+<!--End of Navbar-->
 
 <!--Carousel-->
-
-
-
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -169,41 +169,56 @@
 
 </div>
 
-
-<div class="container">
-
+<!--About us section-->
+<div id="aboutus" class="container">
     <div class="row">
-      <div class="feature-box col-md-4 text-center">
-        <i class="icon fa fa-check-circle fa-4x"></i>
-        <h3 class="feature-title">Services.</h3>
-        <p>A Pet Concierge will visit your home to walk your dog, play ball in the yard or give them some love and attention complete with belly rubs and head scratches. </p>
-      </div>
-
-      <div class="feature-box col-md-4 text-center">
-        <i class="icon fa fa-bath fa-4x"></i>
-        <h3 class="feature-title">Grooming.</h3>
-        <p>Bath, Nail Trimming, Ear Cleaning, Blow Dry & Fifteen Minute brush out.</p>
-      </div>
-
-      <div class="feature-box col-md-4 text-center">
-        <i class="icon fa fa-taxi fa-4x"></i>
-        <h3 class="feature-title">Pet Concierge.</h3>
-        <p>Do you need someone to pick-up your fur baby from the vet or clinic? We’ll take care of it!</p>
-      </div>
+        <div class="col pt-5 text-center">
+            <h2>Welcome to Furry Friends </h2>
+            <h3>Pet Concierge</h3>
+            <p>At Furry Friends Pet Concierge, we care for all breeds, including those with special needs! We keep the needs of you and your pet top-of-mind, and cater to each pet's unique personality. Stop by to see why WE are the perfect place for your furry friend. We look forward to seeing your pets and providing the same level of care as always. </p>
+        </div>
     </div>
+    <div class="row">
+        <div class="feature-box col-md-4 text-center">
+                <i class="icon fa fa-check-circle fa-4x"></i>
+                <h3 class="feature-title">Services.</h3>
+                <p>A Pet Concierge will visit your home to walk your dog, play ball in the yard or give them some love and attention complete with belly rubs and head scratches. </p>
+        </div>
 
+        <div class="feature-box col-md-4 text-center">
+                <i class="icon fa fa-bath fa-4x"></i>
+                <h3 class="feature-title">Grooming.</h3>
+                <p>Bath, Nail Trimming, Ear Cleaning, Blow Dry & Fifteen Minute brush out.</p>
+        </div>
+
+        <div class="feature-box col-md-4 text-center">
+                <i class="icon fa fa-taxi fa-4x"></i>
+                <h3 class="feature-title">Pet Concierge.</h3>
+                <p>Do you need someone to pick-up your fur baby from the vet or clinic? We’ll take care of it!</p>
+        </div>
+    </div>  
 </div>
+<!--End of About Us section-->
 
-<div class="container">
-        
+<!--Fun option section-->
+<section class="fun-section ">
+<div class="container ">
+    <div class="row">
+        <div class="col text-center mb-5">
+            <h2>Tail-wagging and purring guaranteed!</h2>
+            <p>Check out all the options for fun below.</p>
+        </div>
+    </div>   
+
     <div class="row align-items-center ">
         <div class="col-md-4">
             <img class="d-flex mr-3 w-100 img-thumbnail" src="img/ian-dooley-5KmrpfJiTSc-unsplash.jpg"/>     
         </div>
         <div class="col">
-            <h3>Pet Sitting</h3>
+            <h3>Stay with Us!</h3>
             <p class="d-none d-sm-block"> 
-                <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </em>
+                <em>"We offer the best-in-show boarding with sizable suites and fun activity packages, so you and your pet can both enjoy much-deserved vacations." </em>
+                <a href="">Learn more </a>
             </p>      
         </div>
     </div>
@@ -211,9 +226,10 @@
     <div class="row align-items-center ">
         
         <div class="col">
-            <h3>Nature Walking</h3>
+            <h3>Play with Us!</h3>
             <p class="d-none d-sm-block"> 
-                <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." </em>
+                <em>"Our daycare options give your pet a fun-filled experience with plenty of time to play with all  their friends!" </em>
+                <a href="">Learn more </a>
             </p>      
         </div>
 
@@ -221,11 +237,32 @@
             <img class="d-flex mr-3 w-100 img-thumbnail" src="img/katie-bernotsky--vQ0i0D04F0-unsplash.jpg"/>     
         </div>
     </div>
+
+    <div class="row align-items-center ">
+        <div class="col-md-4">
+            <img class="d-flex mr-3 w-100 img-thumbnail" src="img/zoe-gayah-jonker-13ky5Ycf0ts-unsplash.jpg"/>     
+        </div>
+        <div class="col">
+            <h3>Spa with Us!</h3>
+            <p class="d-none d-sm-block"> 
+                <em>"Let our grooming experts work their magic. From a simple bath, to head-to-paw pampering – we’ll have your pet looking and feeling fabulous in no time!" </em>
+                <a href="">Learn more </a>
+            </p>      
+        </div>
+    </div>
     
 </div>
+</section>
+<!--End of Fun section-->
 
-
+<!--Services-->
 <div class="container my-5" id="services">
+    <div class="row">
+        <div class="col text-center mb-5">
+            <h2>What we Offer:</h2>
+        </div>
+    </div>   
+
      <div class="row">
         <div class="col-md-4">
             <div class="flipcard">
@@ -265,9 +302,8 @@
                             A Pet Concierge will come to feed and love your cat or small animal: bunnies, birds, reptiles fish and more. We’ll also scoop the litter, bring in the mail, take out the trash and water plants at no extra charge. For optimal care, clients with 6 pets or more are recommended to schedule a 60 Minute Cat Care Visit. We offer 20-30, 45 & 60-minute visit options.
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
-
         </div>
 
         <div class="col-md-4">
@@ -286,49 +322,76 @@
                             $30 per hour / Do you need someone to pick-up your fur baby from the groomer, vet or clinic? We’ll take care of it! Proper documentation from are required when necessary. Vet and groomer bills should be taken care of by the pet owner. This service is normally with a 10 mile distance. *Time is calculated from driver’s start location until pet is dropped off.
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
-
         </div>
-
     </div>
 </div>
+<!--End of Services Section-->
 
+<!--Contact Section-->
+<div id="contactus" class="container contact-section">
+    <div class="row">
+        <div class="col-12 title-section">
+            <h2>Get in touch</h2>
+        </div>
+        <div class="col-lg-6 col-m-12">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-submit">Submit</button>
+              </form>
+        </div>
+        <div class="col-lg-6 col-m-12">
+
+            <a role="button" class="btn " href="1110LeeRd,WinterPark,FL."><i class="fa fa-map-marker"></i> 1110 Lee Rd, Winter Park, FL.</a>
+                <br />
+            <a role="button" class="btn " href="tel:+14075551425"><i class="fa fa-phone"></i> 1-407-555-1425</a>
+                <br />
+            <a role="button" class="btn " href="mailto:furryfriends@gmail.com"><i class="fa fa-envelope-o"></i> furryfriends@gmail.com</a>
+        </div>
+        
+    </div>
+</div>
+<!--End of Contact Section-->
 
 <!--Footer-->
 <footer class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <iframe class="w-100"  
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14009.348089475194!2d-81.3729364!3d28.619659600000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1618450103198!5m2!1sen!2sus" 
                 allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="col-md-4 text-center">
+            <div class="col-md-6 text-center">
                 <h5>Follow Us</h5>
-        
                     <a class="btn btn-social-icon btn-instagram btn-lg" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
                     <a class="btn btn-social-icon btn-facebook btn-lg" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
                     <a class="btn btn-social-icon btn-twitter btn-lg" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-google btn-lg" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                
-            </div>
-
-            <div class="col-md-4 text-center">
-                <h5>Contact Us</h5>
-                <a role="button" class="btn btn-link" href="tel:+14075551425"><i class="fa fa-phone"></i> 1-407-555-1425</a>
-                <br />
-                <a role="button" class="btn btn-link" href="mailto:furryfriends@gmail.com"><i class="fa fa-envelope-o"></i> furryfriends@gmail.com</a>
             </div>
         </div>
         <div class="row">
             <div class="col">
+                <hr>
                 <p class="text-center">© Copyright 2021 Furry Friends.</p>
             </div>
         </div>
     </div>
 </footer>
+<!-- End of Footer section-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
